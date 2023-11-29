@@ -12,9 +12,11 @@ app.use(morgan('dev'))
 
 const companyRoutes = require('./routes/companies')
 const invoiceRoutes = require('./routes/invoices')
+const indRoutes = require('./routes/industries')
 
 app.use('/companies', companyRoutes)
 app.use('/invoices', invoiceRoutes)
+app.use('/industries', indRoutes)
 
 
 /** 404 handler */
